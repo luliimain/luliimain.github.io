@@ -159,7 +159,6 @@ footer,
   height: 50%;
   margin: 0;
   position: relative;
-  justify-content: space-between;
   display: flex;
 }
 
@@ -167,14 +166,10 @@ footer,
   width: 100%;
   height: 50%;
   margin: 0;
-  justify-content: center;
   align-items: center;
   text-align: center;
-  white-space: normal; 
-  word-wrap: break-word;
-  overflow: hidden;
+ 
 }
-
 
 .texto {
   justify-content: center;
@@ -183,10 +178,21 @@ footer,
   display: flex;
   color: #000;
   font-size: 11px;
-   height: 50%;
-  width: 100%;
-}
+ height: 50%;
+ margin: 0;
 
+}
+.divImg{
+   
+  width: 100%;
+ height: 70%;
+  position: relative;
+display: flex;
+  align-items: center;
+  text-align: center;
+  white-space: normal; 
+  word-wrap: break-word;
+}
 .ImgMemo {
   width: 100%;
   height: 100%;
@@ -392,10 +398,10 @@ img {
 .divTexto {
  
   width: 100%;
- height: 50%;
+ height: 30%;
   position: relative;
-  display: flex;
-  justify-content: space-between;
+
+
   align-items: center;
   text-align: center;
   white-space: normal; 
@@ -478,11 +484,12 @@ a{
 .main {
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
   align-items: center;
   text-align: center;
   justify-content: center;
-  margin-top: 3%;
+  margin: 0;
+  margin-left: 10%;
+  margin-top: -3%;
 }
 
 .up {
@@ -608,3 +615,74 @@ a{
 .card4:hover .discord {
   fill: white;
 }
+
+.download-button {
+  border-width: 0;
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 4px;
+  height: 30px;
+  width: 130px;
+
+ }
+ 
+ .download-button .docs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: white;
+  height: 20px;
+  padding: 0 10px;
+  border-radius: 4px;
+  z-index: 1;
+  background-color: #242a35;
+  border: solid 1px #e8e8e82d;
+  transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+ }
+ 
+ .download-button:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+ }
+ 
+ .download {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+width: 50px;
+height:25px;
+  margin: auto;
+  z-index: -1;
+  color: white;
+  border-radius: 4px;
+  margin-top: 10%;
+  transform: translateY(0%);
+  background-color: rgb(124, 188, 209);
+  border: solid 1px #8ca2cf;
+  transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+ }
+ 
+ .download-button:hover .download {
+  transform: translateY(100%)
+ }
+ 
+ .download svg polyline,.download svg line {
+  animation: docs 1s infinite;
+ }
+ 
+ @keyframes docs {
+  0% {
+   transform: translateY(0%);
+  }
+ 
+  50% {
+   transform: translateY(-15%);
+  }
+ 
+  100% {
+   transform: translateY(0%);
+  }
+ }
