@@ -27,11 +27,12 @@
 
 header {
   width: 100%;
-  height: auto;
-  background-color: rgb(183, 202, 196);
+  height: 500px;
+  background-color: rgb(192, 202, 199);
   top: 0;
   position: fixed;
   z-index: -1;
+  
 }
 
 footer {
@@ -42,19 +43,22 @@ footer {
   position: fixed;
   z-index: -1;
 }
+footer h1{
+  margin-top: 2%;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
 
 .content {
-  height: 1000px;
-  min-height: 1000px;
+  height: 700px;
+  min-height: 700px;
   background: #ededed;
   position: relative;
   z-index: 1;
-}
-
-.wrapper-parallax {
-  margin-top: 100%;
-  margin-bottom: 300px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #465512;
+ 
 }
 
 h1 {
@@ -69,17 +73,11 @@ h1 {
   color: #fff;
 }
 
-
-.content {
-  line-height: 1000px;
-  color: #999;
+body{
+  font-family: Helvetica;
 }
 
-footer h1 {
-  line-height: 300px;
-}
 
-header,
 footer,
 #scroll-animate-main {
   -webkit-transition-property: all;
@@ -95,7 +93,6 @@ footer,
   transition-timing-function: cubic-bezier(0, 0, 0, 1);
 }
 
-
 .info {
   display: flex;
   justify-content: space-between;
@@ -109,8 +106,11 @@ footer,
   text-align: center;
   justify-content: center;
 }
-.nombreMio{
-height: 50%;
+
+.nombreMio {
+  height: 50%;
+  margin-top: -5%;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .foto {
@@ -122,7 +122,7 @@ height: 50%;
 }
 
 .book {
-margin-top: -25%;
+  margin-top: -25%;
   border-radius: 10px;
   width: 300px;
   height: 380px;
@@ -162,49 +162,42 @@ margin-top: -25%;
   justify-content: space-between;
   display: flex;
 }
-.textos{
+
+.textos {
   width: 100%;
   height: 50%;
   margin: 0;
-
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  white-space: normal; 
+  word-wrap: break-word;
+  overflow: hidden;
 }
-.divTexto {
-  margin-top: 10%;
-  width: 100%;
-  height: 10%;
-  position: relative;
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  text-align: center;
 
-  
-}
+
 .texto {
-  width:100%;
-  height: 100%;
   justify-content: center;
   text-align: center;
-  align-items: center; 
+  align-items: center;
   display: flex;
   color: #000;
   font-size: 11px;
-  font-family: Helvetica;
-  
+   height: 50%;
+  width: 100%;
 }
-.ImgMemo{
+
+.ImgMemo {
   width: 100%;
   height: 100%;
   justify-content: center;
   text-align: center;
-  align-items: center; 
+  align-items: center;
   display: flex;
   position: absolute;
 
 }
+
 .fotito {
   width: 100%;
   height: 100%;
@@ -247,7 +240,12 @@ margin-top: -25%;
 .container {
   width: 100%;
   height: 50px;
-  
+  margin-top: 5%;
+
+}
+
+img {
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
 }
 
 .contentt {
@@ -260,7 +258,7 @@ margin-top: -25%;
   color: #104d5c;
   margin-left: 25%;
   margin-right: 25%;
-  
+
 }
 
 .content__container {
@@ -281,7 +279,8 @@ margin-top: -25%;
   right: 0;
 }
 
-.content__container:after, .content__container:before {
+.content__container:after,
+.content__container:before {
   position: absolute;
   top: -2px;
   color: #16a085;
@@ -320,7 +319,9 @@ margin-top: -25%;
 }
 
 @keyframes opacity {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 0;
   }
 
@@ -330,24 +331,280 @@ margin-top: -25%;
 }
 
 @keyframes change {
-  0%, 12.66%, 100% {
+
+  0%,
+  12.66%,
+  100% {
     transform: translate3d(0, 0, 0);
   }
 
-  20.00%, 29.32% {
+  20.00%,
+  29.32% {
     transform: translate3d(0, -33%, 0);
   }
 
-  40.00%, 45.98% {
+  40.00%,
+  45.98% {
     transform: translate3d(0, -66%, 0);
   }
 
-  60.00%, 62.64% {
+  60.00%,
+  62.64% {
     transform: translate3d(0, -33%, 0);
   }
 
-  80.00%, 79.3% {
+  80.00%,
+  79.3% {
     transform: translate3d(0, -0%, 0);
   }
 }
+
+.titulo{
+  width: 100%;
+  height: 30%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.proyecto {
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+}
+
+.proyectos {
+  width: 80%;
+  height: 40%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 10%;
+  gap: 10px;
+
+}
+
+.divTexto {
  
+  width: 100%;
+ height: 50%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  white-space: normal; 
+  word-wrap: break-word;
+  
+}
+.card {
+  position: relative;
+  width: 220px;
+  height: 320px;
+  background: rgb(183, 226, 25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  flex: 1 1 calc(25% - 20px);
+  text-align: center;
+  
+}
+
+
+.card::before,
+.card::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: rgb(124, 188, 209);
+  transition: all 0.5s;
+
+}
+
+.card::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.card::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100%  0 15px;
+}
+
+.card:hover::before,
+.card:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.2s;
+  content: attr(data-content);
+}
+
+#c1:hover:after {
+  content: "PYTHON + REACT + SQLALCHEMY + POSTGRESQL";
+}
+#c2:hover:after {
+  content: "JAVA + HTML + CSS + JAVASCRIPT + POSTGRESQL";
+}
+#c3:hover:after {
+  content: "HTML + CSS + JAVASCRIPT";
+}
+#c4:hover:after {
+  content: "...";
+}
+a{
+  color: #465512;
+  text-decoration: none;
+}
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card1 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.whatsapp {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  fill: #00ff00;
+}
+
+.card2 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.linkedin {
+  margin-top: 1.5em;
+  margin-left: -0.9em;
+  fill: #0077b5;
+}
+
+.card3 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.github {
+  margin-top: -0.6em;
+  margin-left: 1.2em;
+}
+
+.card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.discord {
+  margin-top: -0.9em;
+  margin-left: -1.2em;
+  fill: #ff8c8c;
+
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #00ff00;
+}
+
+.card1:hover .whatsapp {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #0077b5;
+}
+
+.card2:hover .linkedin {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: black;
+}
+
+.card3:hover .github {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #8c9eff;
+}
+
+.card4:hover .discord {
+  fill: white;
+}
