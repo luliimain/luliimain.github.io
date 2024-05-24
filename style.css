@@ -852,12 +852,14 @@ a {
   footer {
     height: 200px;
   }
-  .proyectos{
+
+  .proyectos {
     margin-top: -20%;
   }
 
 
 }
+
 @media only screen and (max-width: 927px) {
 
   .carddd {
@@ -963,12 +965,14 @@ a {
   footer {
     height: 200px;
   }
-  .proyectos{
+
+  .proyectos {
     margin-top: -20%;
   }
 
 
 }
+
 @media only screen and (max-width: 347px) {
 
   .carddd {
@@ -981,9 +985,11 @@ a {
     font-size: 10px;
     margin-left: 3%;
   }
-  .InformacionP{
+
+  .InformacionP {
     font-size: 10px;
   }
+
   .card {
     width: 60px;
     height: 90px;
@@ -1013,7 +1019,7 @@ a {
 
   .sgvs {
     height: 15px;
-    width:15px;
+    width: 15px;
   }
 
   .card1,
@@ -1023,9 +1029,13 @@ a {
     width: 50px;
     height: 50px;
   }
-  .whatsapp, .linkedin, .discord, .github{
+
+  .whatsapp,
+  .linkedin,
+  .discord,
+  .github {
     height: 15px;
-    width:15px;
+    width: 15px;
   }
 
   .logo {
@@ -1036,7 +1046,95 @@ a {
   footer {
     height: 200px;
   }
-  .proyectos{
+
+  .proyectos {
+    margin-top: -20%;
+  }
+
+
+}
+
+@media only screen and (max-width: 273px) {
+
+  .carddd {
+    width: 70px;
+    height: 130px;
+    margin-top: 50%;
+  }
+
+  .fotito {
+    border-radius: 5px;
+  }
+
+  .Lucia {
+    font-size: 8px;
+    margin-left: 3%;
+  }
+
+  .InformacionP {
+    font-size: 8px;
+  }
+
+  .card {
+    width: 40px;
+    height: 80px;
+    font-size: 7px;
+  }
+
+  .content__container__list {
+    margin-left: -20%;
+  }
+
+  .download {
+    display: none;
+  }
+
+  .download-button {
+    height: 15px;
+    width: 50px;
+  }
+
+
+  .download-button .docs {
+    width: -120px;
+    height: 8px;
+    font-size: 5px;
+    gap: 0px;
+    margin-top: -5%;
+    margin-left: 0%;
+  }
+
+  .sgvs {
+    height: 15px;
+    width: 15px;
+  }
+
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    width: 50px;
+    height: 50px;
+  }
+
+  .whatsapp,
+  .linkedin,
+  .discord,
+  .github {
+    height: 15px;
+    width: 15px;
+  }
+
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  footer {
+    height: 200px;
+  }
+
+  .proyectos {
     margin-top: -20%;
   }
 
