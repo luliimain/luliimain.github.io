@@ -1,7 +1,9 @@
+/*
+  parallax
+*/
 #scroll-animate {
   overflow: hidden;
 }
-
 
 #scroll-animate-main {
   width: 100%;
@@ -25,16 +27,30 @@
   right: 0;
 }
 
+footer,
+#scroll-animate-main {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  transition-property: all;
+
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+  -moz-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+  transition-timing-function: cubic-bezier(0, 0, 0, 1);
+}
+
 header {
   width: 100%;
-  height: 500px;
+  height: 100px;
   background: rgb(202, 233, 255);
   top: 0;
   position: fixed;
   z-index: -1;
   bottom: 300px;
   line-height: 0px;
-
 }
 
 footer {
@@ -46,11 +62,6 @@ footer {
   z-index: -1;
 }
 
-footer h1 {
-  margin-top: 2%;
-  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-}
-
 .content {
   height: 700px;
   min-height: 700px;
@@ -60,8 +71,14 @@ footer h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
-
+/*
+  fin parallax
+*/
+footer h1 {
+  margin-top: 2%;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
@@ -80,22 +97,6 @@ body {
   font-family: Helvetica;
 }
 
-
-footer,
-#scroll-animate-main {
-  -webkit-transition-property: all;
-  -moz-transition-property: all;
-  transition-property: all;
-
-  -webkit-transition-duration: 0.4s;
-  -moz-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-
-  -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1);
-  -moz-transition-timing-function: cubic-bezier(0, 0, 0, 1);
-  transition-timing-function: cubic-bezier(0, 0, 0, 1);
-}
-
 .info {
   display: flex;
   justify-content: space-between;
@@ -106,9 +107,18 @@ footer,
 }
 
 .Lucia {
-
+  text-transform: uppercase;
+  width: auto;
+  height: auto;
+  font-size: 2vw;
   color: rgb(27, 73, 101);
   text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.containerInfo {
+  width: 100%;
+  height: 80%;
 }
 
 .nombre {
@@ -129,93 +139,11 @@ footer,
 
 .foto {
   width: 50%;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-
-.book {
-  margin-top: -25%;
-  border-radius: 10px;
-  width: 300px;
-  height: 380px;
-  background-color: whitesmoke;
-  -webkit-box-shadow: 1px 1px 12px #000;
-  box-shadow: 1px 1px 12px #000;
-  -webkit-transform: preserve-3d;
-  -ms-transform: preserve-3d;
-  transform: preserve-3d;
-  -webkit-perspective: 2000px;
-  perspective: 2000px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  color: #000;
-}
-
-.memooo {
-  width: 100%;
   height: 100%;
-  align-items: center;
   text-align: center;
   justify-content: center;
-}
-
-
-.Divmemo {
-  width: 100%;
-  height: 30%;
-  margin: 0;
-  position: relative;
   display: flex;
-}
-
-.textos {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-
-.texto {
-  line-height: 40px;
-  color: #000;
-  font-size: 11px;
-  height: 50%;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-
-.divImg {
-
-  width: 100%;
-  height: 70%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  white-space: normal;
-  word-wrap: break-word;
-}
-
-.ImgMemo {
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  display: flex;
-  position: absolute;
-
+  margin: auto;
 }
 
 .fotito {
@@ -224,63 +152,28 @@ footer,
   border-radius: 30px;
 }
 
-.cover {
-  top: 0;
-  position: absolute;
-  background-color: rgb(211, 211, 211);
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  cursor: pointer;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  -webkit-transform-origin: 0;
-  -ms-transform-origin: 0;
-  transform-origin: 0;
-  -webkit-box-shadow: 1px 1px 12px #000;
-  box-shadow: 1px 1px 12px #000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.book:hover .cover {
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  -webkit-transform: rotatey(-80deg);
-  -ms-transform: rotatey(-80deg);
-  transform: rotatey(-80deg);
-}
-
-.container {
-  width: 100%;
-  height: 20%;
-  margin-top: 10%;
-
-}
-
 img {
   filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
 }
 
+/* coso giratorio */
 .contentt {
   display: block;
   position: sticky;
   overflow: hidden;
   font-family: 'Lato', sans-serif;
-  font-size: 45px;
   line-height: 40px;
   color: #104d5c;
   margin-left: 10%;
   height: 100%;
   width: 100%;
+}
 
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 10% 2%;
+  box-sizing: border-box
 }
 
 .content__container {
@@ -292,7 +185,6 @@ img {
 
 
 .content__container__text {
-  display: inline;
   float: left;
   margin: 0;
 }
@@ -315,7 +207,7 @@ img {
   margin: 0;
   width: 650px;
   height: 30%;
-  font-size: 50px;
+  font-size: 2.8vw;
 }
 
 @keyframes opacity {
@@ -363,6 +255,8 @@ img {
     transform: translate3d(0, -25%, 0);
   }
 }
+
+/* fin coso giratorio*/
 
 .titulo {
   width: 100%;
@@ -642,7 +536,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
+  gap: 5px;
   color: white;
   height: 20px;
   padding: 0 10px;
@@ -703,15 +597,19 @@ a {
   width: 50px;
   height: 50px;
 }
+
 .logoB {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   margin-left: 25%;
-  margin-top: 20%;
+  margin-top: 25%;
+  fill: rgb(27, 73, 101);
 }
-.logoB:hover{
+
+.logoB:hover {
   transform: translateY(-3px);
 }
+
 .logos {
   width: 100%;
   height: 30%;
@@ -780,14 +678,16 @@ a {
 .carddd {
   width: 300px;
   height: 375px;
+  margin-top: 10%;
   border-radius: 30px;
-  margin-top: -15%;
   background: lightgrey;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
 }
+
 .montserrat {
   font-family: 'Poppins', sans-serif;
 }
+
 .more-buttons {
   position: absolute;
   top: 90%;
@@ -824,6 +724,321 @@ a {
   max-height: 500px;
   opacity: 1;
 }
-.sgvs{
+
+.sgvs {
   fill: rgb(27, 73, 101);
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1136px) {
+
+  .carddd {
+    width: 280px;
+    height: 370px;
+    margin-top: 15%;
+  }
+
+  .card {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 927px) {
+
+  .carddd {
+    width: 250px;
+    height: 325px;
+    margin-top: 20%;
+  }
+
+  .card {
+    width: 150px;
+    height: 250px;
+    font-size: 12px;
+
+  }
+
+}
+
+@media only screen and (max-width: 695px) {
+
+  .carddd {
+    width: 200px;
+    height: 300px;
+    margin-top: 20%;
+  }
+
+  .card {
+    width: 130px;
+    height: 230px;
+    font-size: 10px;
+
+  }
+}
+
+@media only screen and (max-width: 556px) {
+
+  .carddd {
+    width: 150px;
+    height: 200px;
+    margin-top: 50%;
+  }
+
+  .nombre {
+    width: 70%;
+  }
+
+  .foto {
+    width: 30%;
+  }
+
+  .card {
+    width: 100px;
+    height: 200px;
+    font-size: 10px;
+  }
+
+  .Lucia {
+    font-size: 15px;
+    margin-left: 0px;
+  }
+
+  .content__container__list {
+    margin-left: -5%;
+  }
+
+  .download {
+    display: none;
+  }
+
+  .download-button {
+    height: 30px;
+    width: 50px;
+  }
+
+  .download-button .docs {
+    width: 15px;
+    height: 23px;
+    font-size: 10px;
+    gap: 3px;
+  }
+
+  .content {
+    height: 200px;
+  }
+
+  .sgvs {
+    height: 20px;
+    width: 20px;
+  }
+
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    width: 60px;
+    height: 60px;
+  }
+
+  .logo {
+    width: 35px;
+    height: 35px;
+  }
+
+  footer {
+    height: 200px;
+  }
+  .proyectos{
+    margin-top: -20%;
+  }
+
+
+}
+@media only screen and (max-width: 927px) {
+
+  .carddd {
+    width: 250px;
+    height: 325px;
+    margin-top: 20%;
+  }
+
+  .card {
+    width: 150px;
+    height: 250px;
+    font-size: 12px;
+
+  }
+
+}
+
+@media only screen and (max-width: 695px) {
+
+  .carddd {
+    width: 200px;
+    height: 300px;
+    margin-top: 20%;
+  }
+
+  .card {
+    width: 130px;
+    height: 230px;
+    font-size: 10px;
+
+  }
+}
+
+@media only screen and (max-width: 463px) {
+
+  .carddd {
+    width: 120px;
+    height: 180px;
+    margin-top: 50%;
+  }
+
+  .Lucia {
+    font-size: 12px;
+    margin-left: -5%;
+  }
+
+  .nombre {
+    width: 70%;
+  }
+
+  .foto {
+    width: 30%;
+  }
+
+  .card {
+    width: 80px;
+    height: 180px;
+    font-size: 10px;
+  }
+
+  .content__container__list {
+    margin-left: -5%;
+  }
+
+  .download {
+    display: none;
+  }
+
+  .download-button {
+    height: 30px;
+    width: 50px;
+  }
+
+  .download-button .docs {
+    width: 15px;
+    height: 23px;
+    font-size: 10px;
+    gap: 3px;
+  }
+
+  .content {
+    height: 200px;
+  }
+
+  .sgvs {
+    height: 20px;
+    width: 20px;
+  }
+
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    width: 60px;
+    height: 60px;
+  }
+
+  .logo {
+    width: 35px;
+    height: 35px;
+  }
+
+  footer {
+    height: 200px;
+  }
+  .proyectos{
+    margin-top: -20%;
+  }
+
+
+}
+@media only screen and (max-width: 347px) {
+
+  .carddd {
+    width: 100px;
+    height: 150px;
+    margin-top: 20%;
+  }
+
+  .Lucia {
+    font-size: 10px;
+    margin-left: 3%;
+  }
+  .InformacionP{
+    font-size: 10px;
+  }
+  .card {
+    width: 60px;
+    height: 90px;
+    font-size: 10px;
+  }
+
+  .content__container__list {
+    margin-left: -20%;
+  }
+
+  .download {
+    display: none;
+  }
+
+  .download-button {
+    height: 20px;
+    width: -120px;
+  }
+
+  .download-button .docs {
+    width: -120px;
+    height: 10px;
+    font-size: 5px;
+    gap: 0px;
+    margin-left: 0%;
+  }
+
+  .sgvs {
+    height: 15px;
+    width:15px;
+  }
+
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    width: 50px;
+    height: 50px;
+  }
+  .whatsapp, .linkedin, .discord, .github{
+    height: 15px;
+    width:15px;
+  }
+
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  footer {
+    height: 200px;
+  }
+  .proyectos{
+    margin-top: -20%;
+  }
+
+
 }
