@@ -140,7 +140,7 @@ document.querySelector('#app').innerHTML = `
         <div class="info">
             <div class="nombre">
 
-                <div class="container">
+              
                     <div class="contentt">
                         <div class="content__container montserrat">
                             <ul class="content__container__list montserrat">
@@ -151,7 +151,7 @@ document.querySelector('#app').innerHTML = `
                             </ul>
                         </div>
                     </div>
-                </div>
+               
                 <div class="containerInfo">
                     <h1 class="Lucia montserrat">lMain | Software developer</h1> <br>
                     <p class="InformacionP montserrat">Soy Lucia, técnica en Programación recibida en
@@ -163,7 +163,7 @@ document.querySelector('#app').innerHTML = `
             </div>
             <div class="foto">
                 <div class="carddd">
-                    <img class="fotito" src="/archivos/fotos/R.jpeg" alt="">
+                    <img class="fotito" src="archivos/fotos/R.jpeg" alt="">
                     <div class="boton">
                         <button class="download-button">
                             <a href="/archivos/CVs.pdf" target="_blank" download="CVs.pdf">
@@ -487,19 +487,19 @@ document.querySelector('#app').innerHTML = `
 `;
 const MenuPrincipal = document.getElementById('Casa');
 MenuPrincipal.addEventListener('click', function () {
-  bajarPagina('arriba');
+    bajarPagina('arriba');
 });
 const Medio = document.getElementById('mitad');
 Medio.addEventListener('click', function () {
-  bajarPagina('medio');
+    bajarPagina('medio');
 });
 const Abajo = document.getElementById('foote');
 Abajo.addEventListener('click', function () {
-  bajarPaginadelTodo();
+    bajarPaginadelTodo();
 });
 const masBotones = document.getElementById('masB');
 masBotones.addEventListener('click', function () {
-  toggleMoreButtons();
+    toggleMoreButtons();
 });
 
 setupCounter(document.querySelector('#counter'))
